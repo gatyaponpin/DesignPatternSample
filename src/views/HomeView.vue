@@ -7,7 +7,7 @@
     </v-row>
  <v-row>
       <PatternButton label="Factory Method" to="/factory" />
-      <PatternButton label="Abstract Factory" to="/abstract" :disabled="true"/>
+      <PatternButton label="Abstract Factory" to="/abstract"/>
       <PatternButton label="Builder" to="/builder" :disabled="true"/>
       <PatternButton label="Prototype" to="/prototype" :disabled="true"/>
     </v-row>

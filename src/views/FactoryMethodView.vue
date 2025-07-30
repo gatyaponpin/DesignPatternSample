@@ -22,20 +22,35 @@
 
 <script setup lang="ts">
   import { ref, onMounted } from 'vue'
-  import { useSetExplanation } from '@/components/useExplanation'
   import { createNotifier } from '@/components/FactoryMethod/NotificationFactory'
   import { notificationTypes, NotificationType } from '@/components/FactoryMethod/Notifier'
+  import { useSetExplanation } from '@/components/useExplanation'
 
-  const selectedType = ref<NotificationType>('info')
   const types = notificationTypes
-
+  const selectedType = ref<NotificationType>('info')
+    
   function notify() {
     const notifier = createNotifier(selectedType.value)
     notifier.notify(`これは ${selectedType.value} 通知です`)
   }
 
   const setExplanation = useSetExplanation()
-  const text = "Factory Method パターンは、<br>サブクラスでインスタンス生成方法を定義し、柔軟に切り替えるパターンです。"
+  const text = `
+  Factory Method パターンは、<br>
+  サブクラスにインスタンス生成を任せ、拡張性を高めるパターンです。<br><br>
+
+  - 基底クラスで「インスタンス生成の枠組み（工場）」を定義し、<br>
+  - 実際に生成する具体クラスはサブクラスで決定する。<br><br>
+
+   使用例：<br>
+  - 通知サービスの切り替え（メール/SMS/Slack） <br>
+  - ログ出力処理<br>
+  - UIコンポーネントの構築ツール<br><br>
+
+  通知タイプの実装：<br>
+  info：コンソールにメッセージが表示されます。<br>
+  error：JSアラートが表示されます。
+  `
 
   onMounted(() => {
     setExplanation?.(text)
