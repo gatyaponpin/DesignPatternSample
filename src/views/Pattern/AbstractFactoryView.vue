@@ -35,7 +35,7 @@ const currentButton = computed(() => factory.value.createButton())
 const currentAlert = computed(() => factory.value.createAlert())
 
 const setExplanation = useSetExplanation()
-  const text = `
+const text = `
   Abstract Factory パターンは、<br>
   関連するオブジェクト群をまとめて生成するためのパターンです。<br>
   製品群の整合性を保ちながら、テーマや環境に応じた切替を容易にする目的があります。<br><br>
@@ -48,9 +48,9 @@ const setExplanation = useSetExplanation()
   - ゲームのステージごとのオブジェクト生成<br>
   - 多言語対応<br>
   - HTML / PDF / Markdown の出力切り替え
-  `
+`
 
-  onMounted(() => {
-    setExplanation?.(text)
-  })
+onMounted(() => {
+  setExplanation?.(text)
+})
 </script>

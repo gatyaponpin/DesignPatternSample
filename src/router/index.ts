@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Factory from '../views/FactoryMethodView.vue'
-import Abstract from '../views/AbstractFactoryView.vue'
+import Factory from '../views/Pattern/FactoryMethodView.vue'
+import Abstract from '../views/Pattern/AbstractFactoryView.vue'
+import Builder from '../views/Pattern/BuilderView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -18,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/abstract',
     name: 'abstract',
     component: Abstract
+  },
+  {
+    path: '/builder',
+    name: 'builder',
+    component: Builder
   },
 ]
 
