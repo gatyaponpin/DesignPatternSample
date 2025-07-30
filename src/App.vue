@@ -1,30 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <v-app>
+    <v-app-bar color="primary">
+      <v-btn to="/"><v-icon>mdi-home</v-icon></v-btn>
+      <v-toolbar-title>Design Patter Sample App</v-toolbar-title>
+    </v-app-bar>
+    <v-main>
+      <v-container class="mt-5 d-flex">
+        <v-layout height="80vh" class="pa-5 border">
+          <router-view/>
+        </v-layout>
+        <v-layout height="80vh" class="pa-5 border">
+          <ExplainBox :text="explanationText" />
+        </v-layout>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script setup lang="ts">
+  import { provideExplanation } from '@/components/useExplanation'
+  import ExplainBox from '@/views/ExplainBox.vue'
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  const explanationText = provideExplanation()
+</script>
