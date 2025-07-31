@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Factory from '../views/Pattern/FactoryMethodView.vue'
 import Abstract from '../views/Pattern/AbstractFactoryView.vue'
 import Builder from '../views/Pattern/BuilderView.vue'
+import Prototype from '../views/Pattern/PrototypeView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/builder',
     name: 'builder',
     component: Builder
+  },
+    {
+    path: '/prototype',
+    name: 'prototype',
+    component: Prototype
   },
 ]
 
