@@ -6,6 +6,7 @@ import Builder from '../views/Pattern/BuilderView.vue'
 import Prototype from '../views/Pattern/PrototypeView.vue'
 import Singleton from '../views/Pattern/SingletonView.vue'
 import Adapter from '../views/Pattern/AdapterView.vue'
+import Bridge from '../views/Pattern/BridgeView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -38,10 +39,15 @@ const routes: Array<RouteRecordRaw> = [
     name: 'singleton',
     component: Singleton
   },
-    {
+  {
     path: '/adapter',
     name: 'adapter',
     component: Adapter
+  },
+  {
+    path: '/bridge',
+    name: 'bridge',
+    component: Bridge
   },
 ]
 

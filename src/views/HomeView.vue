@@ -19,7 +19,7 @@
     </v-row>
     <v-row>
       <PatternButton label="Adapter" to="/adapter" />
-      <PatternButton label="Bridge" to="/bridge"  :disabled="true"/>
+      <PatternButton label="Bridge" to="/bridge" />
       <PatternButton label="Composite" to="/composite" :disabled="true"/>
       <PatternButton label="Decorator" to="/decorator" :disabled="true"/>
       <PatternButton label="Facade" to="/facade" :disabled="true"/>
