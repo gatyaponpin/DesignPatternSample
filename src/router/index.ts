@@ -4,6 +4,7 @@ import Factory from '../views/Pattern/FactoryMethodView.vue'
 import Abstract from '../views/Pattern/AbstractFactoryView.vue'
 import Builder from '../views/Pattern/BuilderView.vue'
 import Prototype from '../views/Pattern/PrototypeView.vue'
+import Singleton from '../views/Pattern/SingletonView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -26,10 +27,15 @@ const routes: Array<RouteRecordRaw> = [
     name: 'builder',
     component: Builder
   },
-    {
+  {
     path: '/prototype',
     name: 'prototype',
     component: Prototype
+  },
+  {
+    path: '/singleton',
+    name: 'singleton',
+    component: Singleton
   },
 ]
 

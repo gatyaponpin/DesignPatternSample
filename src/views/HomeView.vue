@@ -10,7 +10,7 @@
       <PatternButton label="Abstract Factory" to="/abstract"/>
       <PatternButton label="Builder" to="/builder"/>
       <PatternButton label="Prototype" to="/prototype"/>
-      <PatternButton label="Singleton" to="/singleton" :disabled="true"/>
+      <PatternButton label="Singleton" to="/singleton"/>
     </v-row>
     <v-row>
       <v-col cols="12">

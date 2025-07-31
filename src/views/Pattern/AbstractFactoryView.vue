@@ -37,8 +37,8 @@ const currentAlert = computed(() => factory.value.createAlert())
 const setExplanation = useSetExplanation()
 const text = `
   Abstract Factory パターンは、<br>
-  関連するオブジェクト群をまとめて生成するためのパターンです。<br>
-  製品群の整合性を保ちながら、テーマや環境に応じた切替を容易にする目的があります。<br><br>
+  関連するオブジェクト群を<strong>まとめて生成</strong>するためのパターンです。<br>
+  <strong>製品群の整合性を保ちながら、テーマや環境に応じた切替を容易にする</strong>目的があります。<br><br>
 
   - 抽象クラスで製品群の生成インターフェースを定義し、<br>
   - 具象クラスがそれぞれに応じた製品（コンポーネント）群を生成する。<br><br>

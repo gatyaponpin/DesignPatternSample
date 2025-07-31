@@ -37,7 +37,7 @@
   const setExplanation = useSetExplanation()
   const text = `
     Factory Method パターンは、<br>
-    サブクラスにインスタンス生成を任せ、拡張性を高めるパターンです。<br><br>
+    <strong>サブクラスにインスタンス生成を任せ</strong>、拡張性を高めるパターンです。<br><br>
 
     - 基底クラスで「インスタンス生成の枠組み（工場）」を定義し、<br>
     - 実際に生成する具体クラスはサブクラスで決定する。<br><br>
@@ -48,8 +48,8 @@
     - UIコンポーネントの構築ツール<br><br>
 
     通知タイプの実装：<br>
-    info：コンソールにメッセージが表示されます。<br>
-    error：JSアラートが表示されます。
+    <strong>info</strong>：コンソールにメッセージが表示されます。<br>
+    <strong>error</strong>：JSアラートが表示されます。
   `
 
   onMounted(() => {
