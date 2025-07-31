@@ -7,10 +7,10 @@
     </v-row>
     <v-row>
       <PatternButton label="Factory Method" to="/factory" />
-      <PatternButton label="Abstract Factory" to="/abstract"/>
-      <PatternButton label="Builder" to="/builder"/>
-      <PatternButton label="Prototype" to="/prototype"/>
-      <PatternButton label="Singleton" to="/singleton"/>
+      <PatternButton label="Abstract Factory" to="/abstract" />
+      <PatternButton label="Builder" to="/builder" />
+      <PatternButton label="Prototype" to="/prototype" />
+      <PatternButton label="Singleton" to="/singleton" />
     </v-row>
     <v-row>
       <v-col cols="12">
@@ -18,7 +18,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <PatternButton label="Adapter" to="/adapter" :disabled="true"/>
+      <PatternButton label="Adapter" to="/adapter" />
       <PatternButton label="Bridge" to="/bridge"  :disabled="true"/>
       <PatternButton label="Composite" to="/composite" :disabled="true"/>
       <PatternButton label="Decorator" to="/decorator" :disabled="true"/>
